@@ -10,6 +10,7 @@ import React from 'react';
 import FlatCard from './components/FlatCard';
 import ElevatedCard from './components/ElevatedCard';
 import FancyCard from './components/FancyCard';
+import ActionCard from './components/ActionCard';
 
 export default function Vishal() {
   const isDarkMode = useColorScheme() === 'dark';
@@ -17,10 +18,15 @@ export default function Vishal() {
     <SafeAreaView>
       {/* <SafeAreaView style={isDarkMode ? styles.darkBG : styles.lightBG}> */}
       <ScrollView>
+        {/* flat card */}
         <FlatCard />
+        {/* Elevated scrolling cards */}
         <ElevatedCard />
+        {/* trending places */}
         <Text style={styles.headingText}>Trending Places </Text>
         <FancyCard />
+        {/* Blogs */}
+        <ActionCard />
       </ScrollView>
     </SafeAreaView>
   );
