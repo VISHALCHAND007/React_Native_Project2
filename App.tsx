@@ -11,6 +11,7 @@ import FlatCard from './components/FlatCard';
 import ElevatedCard from './components/ElevatedCard';
 import FancyCard from './components/FancyCard';
 import ActionCard from './components/ActionCard';
+import ContactList from './components/ContactList';
 
 export default function Vishal() {
   const isDarkMode = useColorScheme() === 'dark';
@@ -27,6 +28,9 @@ export default function Vishal() {
         <FancyCard />
         {/* Blogs */}
         <ActionCard />
+        {/* WhatsApp like design */}
+        <ContactList />
+
       </ScrollView>
     </SafeAreaView>
   );
